@@ -185,7 +185,22 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
+    <Content Include="App_Themes\lemon\images\Thumbs.db" />
+    <Content Include="App_Themes\lemon\Thumbs.db" />
+    <Content Include="Lemon.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="App_Themes\lemon\css\grid.css" />
+    <Content Include="App_Themes\lemon\css\ie.css" />
+    <Content Include="App_Themes\lemon\css\reset.css" />
+    <Content Include="App_Themes\lemon\css\style.css" />
+    <Content Include="App_Themes\lemon\images\banner-bg.jpg" />
+    <Content Include="App_Themes\lemon\images\bg.jpg" />
+    <Content Include="App_Themes\lemon\images\footer-bg.jpg" />
+    <Content Include="App_Themes\lemon\images\image1.jpg" />
+    <Content Include="App_Themes\lemon\index.html" />
+    <Content Include="App_Themes\lemon\LICENSE.txt" />
+    <Content Include="App_Themes\lemon\screenshot.gif" />
+    <Content Include="App_Themes\lemon\screenshot.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -354,6 +369,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Lemon.Master.cs">
+      <DependentUpon>Lemon.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lemon.Master.designer.cs">
+      <DependentUpon>Lemon.Master</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -381,7 +403,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="App_Themes\Theme1\" />
+    <Folder Include="App_Themes\lemon\js\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
