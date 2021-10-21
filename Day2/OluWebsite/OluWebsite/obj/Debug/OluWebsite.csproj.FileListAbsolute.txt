@@ -98,6 +98,5 @@ C:\Github\AspnetWebform\aspnet_webform_21_10_2021\Day2\OluWebsite\OluWebsite\bin
 C:\Github\AspnetWebform\aspnet_webform_21_10_2021\Day2\OluWebsite\OluWebsite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Github\AspnetWebform\aspnet_webform_21_10_2021\Day2\OluWebsite\OluWebsite\obj\Debug\OluWebsite.csproj.AssemblyReference.cache
 C:\Github\AspnetWebform\aspnet_webform_21_10_2021\Day2\OluWebsite\OluWebsite\obj\Debug\OluWebsite.csproj.CoreCompileInputs.cache
-C:\Github\AspnetWebform\aspnet_webform_21_10_2021\Day2\OluWebsite\OluWebsite\obj\Debug\OluWebsite.csproj.CopyComplete
 C:\Github\AspnetWebform\aspnet_webform_21_10_2021\Day2\OluWebsite\OluWebsite\obj\Debug\OluWebsite.dll
 C:\Github\AspnetWebform\aspnet_webform_21_10_2021\Day2\OluWebsite\OluWebsite\obj\Debug\OluWebsite.pdb
