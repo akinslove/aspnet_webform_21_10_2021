@@ -33,6 +33,8 @@ namespace OluWebsite
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                             "~/Scripts/modernizr-*"));
+
+            bundles.Add(new StyleBundle("~/Olu/").Include("~/Styles/main.css"));
         }
     }
 }

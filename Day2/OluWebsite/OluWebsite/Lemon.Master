@@ -9,7 +9,11 @@
     <link href="~/App_Themes/lemon/css/reset.css" rel="stylesheet" type="text/css" media="screen" runat="server" />
     <link href="~/App_Themes/lemon/css/style.css" rel="stylesheet" type="text/css" media="screen" runat="server" />
     <link href="~/App_Themes/lemon/css/grid.css" rel="stylesheet" type="text/css" media="screen" runat="server" />
-
+    <%--<link href="~/Styles/main.css" rel="stylesheet" type="text/css" media="screen" runat="server" />--%>
+    
+    <asp:PlaceHolder runat="server">
+        <%: Styles.Render("~/Olu/") %>
+    </asp:PlaceHolder>
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 
@@ -51,7 +55,6 @@
                 
                 <div class="inner container_12 clearfix">
                     <div id="main" class="grid_8">
-                        dddd<asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
                         <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
 
 
@@ -78,7 +81,12 @@ Proin hendrerit gravida interdum. Morbi molestie erat sit amet risus euismod veh
 Proin hendrerit gravida interdum. Morbi molestie erat sit amet risus euismod vehicula. Pellen massa nisi. Ut sapien enim, sollicitu
                                 </p>
                                 <p><a href="#">Read More</a></p>
+                                <p>&nbsp;</p>
                             </div>
+
+
+
+                            <br />
 
 
 
@@ -89,9 +97,20 @@ Proin hendrerit gravida interdum. Morbi molestie erat sit amet risus euismod veh
                     <!-- end main -->
                     <div id="sidebar" class="grid_4">
                         <div class="inner">
-                            <asp:Login ID="Login1" runat="server"></asp:Login>
-                            <a href="Account/Register.aspx">Register here</a>
-                            <img src="~/App_Themes/lemon/images/image1.jpg" runat="server" alt="image" class="imgborder" />
+                            <br />
+                            <asp:LoginView ID="LoginView1" runat="server">
+                                <AnonymousTemplate>
+                                    <asp:Login ID="Login1" runat="server"></asp:Login>
+                                    <br />
+                                    <br />
+                                    <a href="Account/Register.aspx">Register here</a>
+                                </AnonymousTemplate>
+                                <LoggedInTemplate>
+                                    Welcome back <asp:LoginName ID="LoginName1" runat="server" />
+                                    <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                                </LoggedInTemplate>
+                            </asp:LoginView>
+                            &nbsp;<img src="~/App_Themes/lemon/images/image1.jpg" runat="server" alt="image" class="imgborder" />
 
                             <div id="address">
                                 <h3>Contact Information</h3>
