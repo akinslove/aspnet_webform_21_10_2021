@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
-  <siteMapNode url="~/Default.aspx" title="Home"  description="Home page">
-    <siteMapNode url="~/Contact.aspx" title="Contact"  description="Contact us page" >
+  <siteMapNode url="~/Default" title="Home"  description="Home page">
 
-      <siteMapNode url="~/About.aspx" title="About"  description="About us page" />
+    <siteMapNode url="~/About" title="About"  description="About us page" />
+    <siteMapNode url="~/Contact" title="Contact"  description="Contact us page" />
+    <siteMapNode url="~/Admin/Admin" title="Admin"  description="Admin page">
+      <siteMapNode url="~/Admin/AddProduct" title="Add Product"  description="Add Product page" />
     </siteMapNode>
   </siteMapNode>
 </siteMap>

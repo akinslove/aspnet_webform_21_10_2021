@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.Data.SqlClient;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -11,7 +9,6 @@ namespace OluWebsite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void ImgBtnAddToBasket_Click(object sender, ImageClickEventArgs e)
@@ -32,7 +29,50 @@ namespace OluWebsite
             {
                 string pid = imgBasket.CommandArgument;
 
-                LblMessage.Text = $"product id is {pid}";
+                //LblMessage.Text = $"product id is {pid}";
+
+                string query =
+                    $"Insert into Basket(pid,bsessionid) Values('{pid}', '{Session.SessionID}');";
+
+                try
+                {
+                    ////create a new instance of DbHandler
+                    //DbHandler dbhandle = new DbHandler();
+
+                    //int result = dbhandle.ExecuteQuery(query);
+
+                    //if (result > 0)
+                    //{
+                    //    LblMessage.Text = "Product added to basket";
+                    //}
+                    //else
+                    //{
+                    //    LblMessage.Text = "Product not added, pls contact IT Support";
+                    //}
+
+                    ////release memory
+                    //dbhandle.Dispose();
+
+                    //Note: I forgot to add the dispose method which is a common flaw
+                    //Below code is a better way to handle io connections
+                    using(DbHandler dbhandle = new DbHandler())
+                    {
+                        int result = dbhandle.ExecuteQuery(query);
+
+                        if (result > 0)
+                        {
+                            LblMessage.Text = "Product added to basket";
+                        }
+                        else
+                        {
+                            LblMessage.Text = "Product not added, pls contact IT Support";
+                        }
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    LblMessage.Text = "Error occured, please contact IT Support";
+                }
             }
 
         }

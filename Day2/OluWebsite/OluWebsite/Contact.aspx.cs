@@ -111,7 +111,7 @@ namespace OluWebsite
                     LblMessage.ForeColor = Color.Green;
                     LblMessage.Text = "Message sent. Thank you";
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     LblMessage.ForeColor = Color.Red;
                     LblMessage.Text = "Unable to send message, pls call 080callmenow";
