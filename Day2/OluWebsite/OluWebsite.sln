@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OluWebsite", "OluWebsite\OluWebsite.csproj", "{A008EC6D-4160-4DDD-86ED-00050EC32041}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OluWebApi", "OluWebApi\OluWebApi.csproj", "{1822B604-2432-4B3C-8147-FF093E785F2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A008EC6D-4160-4DDD-86ED-00050EC32041}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A008EC6D-4160-4DDD-86ED-00050EC32041}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A008EC6D-4160-4DDD-86ED-00050EC32041}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1822B604-2432-4B3C-8147-FF093E785F2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1822B604-2432-4B3C-8147-FF093E785F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1822B604-2432-4B3C-8147-FF093E785F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1822B604-2432-4B3C-8147-FF093E785F2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

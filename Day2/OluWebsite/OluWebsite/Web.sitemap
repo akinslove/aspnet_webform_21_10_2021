@@ -6,6 +6,7 @@
     <siteMapNode url="~/Contact" title="Contact"  description="Contact us page" />
     <siteMapNode url="~/Admin/Admin" title="Admin"  description="Admin page">
       <siteMapNode url="~/Admin/AddProduct" title="Add Product"  description="Add Product page" />
+      <siteMapNode url="~/Admin/EditProduct" title="Edit Product"  description="Edit Product page" />
     </siteMapNode>
   </siteMapNode>
 </siteMap>
